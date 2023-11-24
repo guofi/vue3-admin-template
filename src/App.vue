@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+for (let i = 0; i < 10; i++) {
+  console.log('test husky...')
+}
+</script>
 
 <template>
   <div class="box">
