@@ -1,22 +1,22 @@
-<script setup lang="ts">
-for (let i = 0; i < 10; i++) {
-  console.log('test husky...')
-}
-</script>
-
 <template>
-  <div class="box">
-    <h1>This is App's root component.</h1>
+  <div>
+    <el-button type="primary" size="default" :icon="Plus">primary button</el-button>
+    <el-button type="success" size="small" :icon="Edit">Edit button</el-button>
+    <el-button type="danger" size="default" :icon="Delete">Delete button</el-button>
+    <el-pagination
+      :page-sizes="[100, 200, 300, 400]"
+      layout="total, sizes, prev, pager, next, jumper"
+      :total="400"
+    />
   </div>
 </template>
 
-<style scoped lang="scss">
-.box {
-  widows: 160px;
-  height: 80px;
-  background: red;
-  h1 {
-    color: white;
-  }
-}
-</style>
+<script setup lang="ts">
+import {Plus,Edit,Delete} from '@element-plus/icons-vue'
+</script>
+
+
+
+
+
+<style scoped lang="scss"></style>
